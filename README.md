@@ -171,10 +171,11 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
       ```js
       setPolozky(
-      	querySnapshot.docs.map((doc) => ({
-      		...doc.data(),
-      		id: doc.id,
-      	})),
+      	querySnapshot.docs.map((doc) => {
+      		const data = doc.data()
+      		data.id = doc.id
+      		return data
+      	}),
       )
       ```
 
