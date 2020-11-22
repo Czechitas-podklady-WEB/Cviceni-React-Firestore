@@ -2,6 +2,8 @@
 
 Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
+![demo](zadani/demo.gif)
+
 ## Zadání
 
 1. Vycházej z kódu [React starter](https://github.com/Czechitas-podklady-WEB/project-starter).
