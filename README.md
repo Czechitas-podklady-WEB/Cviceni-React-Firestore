@@ -1,4 +1,4 @@
-# Cvičení: Firebase nákupní seznam
+# Cvičení: Firestore nákupní seznam
 
 Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
