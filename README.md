@@ -1,12 +1,18 @@
 # Cvičení: Firestore nákupní seznam
 
+## Úvod
+
+Firestore je online databáze z balíčku služeb [Firebase](https://firebase.google.com/) od Googlu, kterou volně můžete zapojit do vašich projektů. Vaši uživatelé pak budou mít přístup k těm nejčerstvějším datům podobně jako když stahují pomocí `fetch`. Zároveň jim můžete dovolit i data zapisovat a sdílet mezi sebou.
+
+V následujícím cvičení si vyzkoušíte vytvořit malou aplikaci pro nákupní seznam.
+
 Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 ![demo](zadani/demo.gif)
 
 ## Zadání
 
-1. Vycházej z kódu [React starter](https://github.com/Czechitas-podklady-WEB/project-starter).
+1. Založ nový projekt pomocí [create-czechitas-app](https://www.npmjs.com/package/create-czechitas-app).
 
 1. Ve Firebase konzoli (https://console.firebase.google.com/) přidej nový projekt. Pojmenuj ho například `Nakupni seznam`. Stiskni tlačítko `Continue`.
 
@@ -30,7 +36,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
    1. Register app.
    1. Nech si stránku konzole otevřenou.
 
-1. V terminálu nainstaluj Firebase SDK pomocí `npm install firebase`.
+1. V terminálu ve složce s projektem z kroku 1 nainstaluj Firebase SDK pomocí `npm install firebase`.
 1. Ve složce `src` vytvoř soubor `db.js`.
 
    1. Naimportuj v něm `firebase`.
@@ -202,8 +208,6 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. Zapoj do projektu [React Router](https://reactrouter.com/web/guides/quick-start).
 
-   1. Nezapomeň použít `HashRouter`. Výchozí `BrowserRouter` je komplikovanější.
-
    1. Na úvodní cestě měj výpis všech položek v seznamu a na druhé detail položky.
 
    1. Přidej switch podle ukázky. Vytvoř chybějící komponentu `Detail`, která pro zatím může vykreslovat jen nadpis `<h1>Detail</h1>`.
@@ -270,7 +274,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. Data si cvičně můžeš v detailu vypsat třeba pomocí `<pre>{JSON.stringify(polozka, null, 2)}</pre>`.
 
-1. Všimni si, že data jsou před načtením na chvilku nastaveny na `null`. To protože stahování schvilku trvá.
+1. Všimni si, že data jsou před načtením na chvilku nastaveny na `null`. To protože stahování chvilku trvá.
 
 1. Pokud se data načítají, vypiš text `Načítám`. V opačném případě do nadpisu napiš `{polozka.nazev}`.
 
