@@ -18,7 +18,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. V kroku `Google Analytics for your Firebase project` zruš zapnuté Analytics. Nejsou důležité a komplikují vytvoření první aplikace.
 
-1. V projektu přejdi v levém menu do záložky `Cloud Firestore`.
+1. V projektu přejdi v levém menu do záložky `Firestore`.
 
    1. Stiskni tlačítko `Create database`.
    1. Zaškrtni `Start in test mode`.
