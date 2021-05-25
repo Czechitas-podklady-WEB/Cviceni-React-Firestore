@@ -34,7 +34,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
    1. Pojmenuj ji `Nakupní seznam`.
    1. Nezaškrtávej `Firebase Hosting`. Pro hostování jsme si ukazovali Netlify ([video](https://www.youtube.com/watch?v=sAcJKh6n5DA&list=PLTCx5oiCrIJ5t0LiyDOpBDTgcs-d99UwD&index=30)). Není potřeba se učit nový hosting.
    1. Register app.
-   1. Nech si stránku konzole otevřenou.
+   1. Nech si stránku otevřenou.
 
 1. V terminálu ve složce s projektem z kroku 1 nainstaluj Firebase SDK pomocí `npm install firebase`.
 1. Ve složce `src` vytvoř soubor `db.js`.
