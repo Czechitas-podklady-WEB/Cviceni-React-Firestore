@@ -14,7 +14,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. Založ nový projekt pomocí [create-czechitas-app](https://www.npmjs.com/package/create-czechitas-app).
 
-1. Ve Firebase konzoli (https://console.firebase.google.com/) přidej nový projekt. Pojmenuj ho například `Nakupni seznam`. Stiskni tlačítko `Continue`.
+1. Ve Firebase konzoli (https://console.firebase.google.com/) přidej nový projekt. Pojmenuj ho například `Nakupní seznam`. Stiskni tlačítko `Continue`.
 
 1. V kroku `Google Analytics for your Firebase project` zruš zapnuté Analytics. Nejsou důležité a komplikují vytvoření první aplikace.
 
@@ -31,7 +31,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. V `Project overview` přidej Web app.
 
-   1. Pojmenuj ji `Nákupní seznam`.
+   1. Pojmenuj ji `Nakupní seznam`.
    1. Nezaškrtávej `Firebase Hosting`. Pro hostování jsme si ukazovali Netlify ([video](https://www.youtube.com/watch?v=sAcJKh6n5DA&list=PLTCx5oiCrIJ5t0LiyDOpBDTgcs-d99UwD&index=30)). Není potřeba se učit nový hosting.
    1. Register app.
    1. Nech si stránku konzole otevřenou.
