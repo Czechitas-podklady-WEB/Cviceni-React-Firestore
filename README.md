@@ -35,7 +35,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
       ```
       <ul>
          {polozky.map((polozka) => (
-            <li>{polozka.nazev}</li>
+            <li key={polozka.nazev}>{polozka.nazev}</li>
          ))}
       </ul>
       ```
