@@ -14,6 +14,34 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
 
 1. Založ nový projekt pomocí [create-czechitas-app](https://www.npmjs.com/package/create-czechitas-app).
 
+1. Přichystej komponentu `NakupniSeznam`.
+
+   1. Vlož ji do stránky.
+   1. Přidej komponentě stav s polem objektů.
+
+      ```js
+      const [polozky, setPolozky] = useState([
+      	{
+      		nazev: 'První hardcodovaná položka',
+      	},
+      	{
+      		nazev: 'Druhá hardcodovaná položka',
+      	},
+      ])
+      ```
+
+   1. Vypiš položky do odrážkového seznamu.
+
+      ```
+      <ul>
+         {polozky.map((polozka, i) => (
+            <li key={i}>{polozka.nazev}</li>
+         ))}
+      </ul>
+      ```
+
+   1. Zkontroluj v prohlížeči. Měl by se na stránce ukázat seznam o dvou položkách.
+
 1. Ve Firebase konzoli (https://console.firebase.google.com/) přidej nový projekt. Pojmenuj ho například `Nakupni seznam`. Stiskni tlačítko `Continue`.
 
 1. V kroku `Google Analytics for your Firebase project` zruš zapnuté Analytics. Nejsou důležité a komplikují vytvoření první aplikace.
@@ -47,32 +75,6 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
    1. Zkopíruj do něj proměnnou `firebaseConfig` a `firebase.initializeApp(firebaseConfig)` z konzole v prohlížeči.
    1. Exportuj konstantu pro přístup k databázi `export const db = firebase.firestore()`
 
-1. Založ komponentu `NakupniSeznam`.
-1. Vlož komponentu do stránky.
-1. Přidej komponentě stav s polem objektů.
-
-   ```js
-   const [polozky, setPolozky] = useState([
-   	{
-   		nazev: 'První hardcodovaná položka',
-   	},
-   	{
-   		nazev: 'Druhá hardcodovaná položka',
-   	},
-   ])
-   ```
-
-1. Vypiš položky do odrážkového seznamu.
-
-   ```
-   <ul>
-   	{polozky.map((polozka, i) => (
-   		<li key={i}>{polozka.nazev}</li>
-   	))}
-   </ul>
-   ```
-
-1. Zkontroluj v prohlížeči. Měl by se na stránce ukázat seznam o dvou položkách.
 1. Hardcodované položky nahraď za položky z db.
 
    1. Naimportuj do komponenty soubor `db.js`.
