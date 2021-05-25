@@ -29,7 +29,7 @@ Dokumentace Firestore: https://firebase.google.com/docs/firestore
    1. V ní vytvoř první dokument s `Auto-ID` a s fieldem `nazev`=`První položka`.
    1. Přidej druhý dokument s názvem `Druhá položka`.
 
-1. V project overview přidej Web app.
+1. V `Project overview` přidej Web app.
 
    1. Pojmenuj ji `Nákupní seznam`.
    1. Nezaškrtávej `Firebase Hosting`. Pro hostování jsme si ukazovali Netlify ([video](https://www.youtube.com/watch?v=sAcJKh6n5DA&list=PLTCx5oiCrIJ5t0LiyDOpBDTgcs-d99UwD&index=30)). Není potřeba se učit nový hosting.
