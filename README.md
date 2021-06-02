@@ -6,7 +6,7 @@ Firestore je online databáze z balíčku služeb [Firebase](https://firebase.go
 
 V následujícím cvičení si vyzkoušíte vytvořit malou aplikaci pro nákupní seznam.
 
-Dokumentace Firestore: https://firebase.google.com/docs/firestore
+Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://firebase.google.com/docs/firestore)
 
 ![demo](zadani/demo.gif)
 
