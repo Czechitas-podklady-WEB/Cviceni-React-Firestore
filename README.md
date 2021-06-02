@@ -42,7 +42,7 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
 
    1. Zkontroluj v prohlížeči. Měl by se na stránce ukázat seznam o dvou položkách.
 
-1. Ve Firebase konzoli (https://console.firebase.google.com/) přidej nový projekt. Pojmenuj ho například `Nakupni seznam`. Stiskni tlačítko `Continue`.
+1. Ve Firebase konzoli ([https://console.firebase.google.com/](https://console.firebase.google.com/)) přidej nový projekt. Pojmenuj ho například `Nakupni seznam`. Stiskni tlačítko `Continue`.
 
 1. V kroku `Google Analytics for your Firebase project` zruš zapnuté Analytics. Nejsou důležité a komplikují vytvoření první aplikace.
 
