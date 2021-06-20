@@ -289,4 +289,4 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
 
 ## Zabezpečení dat
 
-Založená databáze v režimu `test mode` se po měsíci sama uzamkne a komunikace s ní z frontendové aplikace tak přestane fungovat. Co dělat dál je popsáno [zde](./zabezpeceni).
+Založená databáze v režimu `test mode` se po měsíci sama uzamkne a komunikace s ní z frontendové aplikace tak přestane fungovat. Co dělat dál je popsáno [zde](zabezpeceni.md).
