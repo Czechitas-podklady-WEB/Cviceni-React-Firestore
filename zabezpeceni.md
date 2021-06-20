@@ -2,11 +2,11 @@
 
 Dokumentace pro [Firebase Security Rules](https://firebase.google.com/docs/firestore/security/get-started).
 
-Na základě zadání [úkolu](README.md) máš založenou databázi v testovací režimu. Vychozí nastavení pro experimenty je na jeden měsíc, po kterém se databáze sama uzamkne. Všechna data, i od uživatelů, budou stále k dispozici ve [Firebase konzoli](https://console.firebase.google.com/), ale nepůjde z nich číst ani do nich zapisovat ve frontendové aplikaci, v JavaScriptu na tvém webu. Pár dní před uzamčením ti přijde od Googlu e-mail.
+Na základě zadání [úkolu](README.md) máš založenou databázi v testovací režimu. Vychozí nastavení pro experimenty je na jeden měsíc, po kterém se databáze sama uzamkne. Všechna data, i od uživatelů, budou stále k dispozici ve [Firebase konzoli](https://console.firebase.google.com/), ale nepůjde z nich číst ani do nich zapisovat ve frontendové aplikaci v JavaScriptu na tvém webu. Pár dní před uzamčením ti přijde od Googlu e-mail.
 
 ![e-mail o vypršení přístupu](zadani/email-expiration.jpg)
 
-Před tebou stojí rozhodnutí, co dál. Máš tři hlavní možnosti.
+Před tebou stojí rozhodnutí, co dál. Máš tři možnosti.
 
 ## 1. Strčit hlavu do písku
 
@@ -16,7 +16,7 @@ Nejjednodušší postup. Nedělat nic. S vypršením přístupu se ti na fronten
 
 Přístup s hlavou v písku může dávat smysl například u testovacích projektů, kdy si chceš jen něco rychle vyzkoušet a není potřeba, aby web fungoval i po měsíci.
 
-Pokud s projektem nemáš už žádné další plány, můžeš ho případně úplně smazat a uvolnit si tím místo pro další. Celkový počet projektů je omezený na pár desítek. Není ale nutné spěchat. Smazat ho můžeš klidně až ti bude chybět místo.
+Pokud s projektem nemáš už žádné další plány, můžeš ho případně úplně smazat a uvolnit tím místo pro další. Celkový počet projektů je omezený na pár desítek. Není ale nutné spěchat. Smazat ho můžeš klidně až ti bude chybět místo.
 
 Pro smazání jdi do `Project settings` a úplně dole na stránce klikni na `Delete project`. Postupuj podle pokynů v bublině, která se objeví.
 
@@ -26,7 +26,7 @@ Pro smazání jdi do `Project settings` a úplně dole na stránce klikni na `De
 
 ## 2. Nechat databázi úplně otevřenou
 
-Druhý nejjednodušší postup. Vyžaduje změnu jednoho řádku v sekci `Rules`.
+Druhý nejjednodušší postup. Vyžaduje změnu dvou řádků v sekci `Rules`.
 
 1. Proklikni modré tlačítko `Edit rules` z e-mailu nebo přejdi přes `Firestore Database` do `Rules` ve Firebase konzoli. Dostaneš se na stránku, která vypadá přibližně takto:
 
