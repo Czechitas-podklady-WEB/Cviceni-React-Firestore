@@ -49,3 +49,9 @@ Jestli je třeba tvůj web hra, pro kterou ukládáš do databáze tabulku vít�
 Jestli tvůj web pomocí databáze umožňuje třeba mezi uživateli posílat soukromé zprávy, zabezpečení určitě zvaž. Hacker je jinak totiž schopný číst i zprávy, které nejsou určené jemu nebo dokonce rozesílat zprávy pod cizím jménem. Podobným útokům čelí i velikání jako Facebook Messenger nebo WhatsApp.
 
 ## 3. Nastudovat způsoby zabezpečení a přístup do databáze částečně omezit
+
+Poslední varianta je nejsložitější. Většinou se používá v kombinaci s dalšími službami jako je Firebase Authentication, Firebase Functions nebo s plnohodnotným backendem.
+
+V principu jde o to, že se omezí přístup k databázi na základě složitějších podmínek. Například, že data můžou zapisovat a číst jen přihlášení uživatelé nebo že mají přístup jen k nějaké části dat.
+
+Ukázky různých omezení jsou popsány v [dokumentaci](https://firebase.google.com/docs/firestore/security/rules-conditions).
