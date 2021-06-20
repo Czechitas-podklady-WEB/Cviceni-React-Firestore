@@ -26,4 +26,26 @@ Pro smazání jdi do `Project settings` a úplně dole na stránce klikni na `De
 
 ## 2. Nechat databázi úplně otevřenou
 
+Druhý nejjednodušší postup. Vyžaduje změnu jednoho řádku v sekci `Rules`.
+
+1. Proklikni modré tlačítko `Edit rules` z e-mailu nebo přejdi přes `Firestore Database` do `Rules` ve Firebase konzoli. Dostaneš se na stránku, která vypadá přibližně takto:
+
+   ![Rules](zadani/test-rules.jpg)
+
+1. Všimni si pátého a šestého řádku. Ty říkají, že povoleno číst a zapisovat (`allow read, write`) platí, jestliže (`if`) je čas požadavku (`request.time`) starší než 24. 6. 2021 (`timestamp.date(2021, 6, 24)`). Všechny požadavky z frontendu tedy do tohoto data můžou číst a zapisovat. Zápisem se myslí přidávání (`add`) i úpravy (`update`) a mazání (`delete`).
+
+1. Pro odemčení databáze na věky věků změň výše zmíněné dva řádky na `allow read, write: if true;`. Jinými slovy vše je povoleno, pokud je `true` pravda, což je vždycky.
+
+1. Změnu zveřejni tlačítkem `Publish`.
+
+   ![zveřejnit nové oprávnění](zadani/publish-rules.jpg)
+
+Úplné odemčení se hodí, pokud v databázi nemáš žádná hodnotná nebo citlivá, tajná data uživatelů a pokud zároveň tvůj web není lákavým terčem hackerů, internetových záškodníků spammerů.
+
+Zkušenější programátor zvládne z tvého webu ze zdrojových kódů JavaScriptu vytáhnout přístupové údaje do databáze. Z ní pak může cokoliv číst nebo data měnit nehledě na to, jestli to umí tvůj web.
+
+Jestli je třeba tvůj web hra, pro kterou ukládáš do databáze tabulku vítězů, záškodník by mohl do tabulky přidat falšné skóre, aby se umístil na první místo. U malých her většinou nikdo nemá motivaci podvádět, dávat si tu práci se do databáze nabourávat a tím pádem příliš nevadí, když zůstane nezabezpečená. Když na to přijde a tvému webu se začne hodně dařit, dokonce tak, že přiláká i nějaké hackery, můžeš podle třetího bodu zabezpečení doplnit dodatečně.
+
+Jestli tvůj web pomocí databáze umožňuje třeba mezi uživateli posílat soukromé zprávy, zabezpečení určitě zvaž. Hacker je jinak totiž schopný číst i zprávy, které nejsou určené jemu nebo dokonce rozesílat zprávy pod cizím jménem. Podobným útokům čelí i velikání jako Facebook Messenger nebo WhatsApp.
+
 ## 3. Nastudovat způsoby zabezpečení a přístup do databáze částečně omezit
