@@ -44,7 +44,7 @@ Druhý nejjednodušší postup. Vyžaduje změnu dvou řádků v sekci `Rules`.
 
 Zkušenější programátor zvládne z tvého webu ze zdrojových kódů JavaScriptu vytáhnout přístupové údaje do databáze. Z ní pak může cokoliv číst nebo data měnit nehledě na to, jestli to umí tvůj web.
 
-Jestli je třeba tvůj web hra, pro kterou ukládáš do databáze tabulku vítězů, záškodník by mohl do tabulky přidat falšné skóre, aby se umístil na první místo. U malých her většinou nikdo nemá motivaci podvádět, dávat si tu práci se do databáze nabourávat a tím pádem příliš nevadí, když zůstane nezabezpečená. Když na to přijde a tvému webu se začne hodně dařit, dokonce tak, že přiláká i nějaké hackery, můžeš podle třetího bodu zabezpečení doplnit dodatečně.
+Jestli je třeba tvůj web hra, pro kterou ukládáš do databáze tabulku vítězů, záškodník by mohl do tabulky přidat falešné skóre, aby se umístil na první místo. U malých her většinou nikdo nemá motivaci podvádět, dávat si tu práci se do databáze nabourávat a tím pádem příliš nevadí, když zůstane nezabezpečená. Když na to přijde a tvému webu se začne hodně dařit, dokonce tak, že přiláká i nějaké hackery, můžeš podle třetího bodu zabezpečení doplnit dodatečně.
 
 Jestli tvůj web pomocí databáze umožňuje třeba mezi uživateli posílat soukromé zprávy, zabezpečení určitě zvaž. Hacker je jinak totiž schopný číst i zprávy, které nejsou určené jemu nebo dokonce rozesílat zprávy pod cizím jménem. Podobným útokům čelí i velikání jako Facebook Messenger nebo WhatsApp.
 
