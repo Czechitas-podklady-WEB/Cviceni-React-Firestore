@@ -2,7 +2,7 @@
 
 Dokumentace pro [Firebase Security Rules](https://firebase.google.com/docs/firestore/security/get-started).
 
-Na základě zadání [úkolu](README.md) máš založenou databázi v testovací režimu. Vychozí nastavení pro experimenty je na jeden měsíc, po kterém se databáze sama uzamkne. Všechna data, i od uživatelů, budou stále k dispozici ve [Firebase konzoli](https://console.firebase.google.com/), ale nepůjde z nich číst ani do nich zapisovat ve frontendové aplikaci v JavaScriptu na tvém webu. Pár dní před uzamčením ti přijde od Googlu e-mail.
+Na základě zadání [úkolu](README.md) máš založenou databázi v testovací režimu. Vychozí nastavení pro experimenty je na jeden měsíc, po kterém se databáze sama uzamkne. Všechna data, i od uživatelů, budou stále k dispozici ve [Firebase konzoli](https://console.firebase.google.com/), ale nepůjde je číst ani do nich zapisovat ve frontendové aplikaci v JavaScriptu na tvém webu. Pár dní před uzamčením ti přijde od Googlu e-mail.
 
 ![e-mail o vypršení přístupu](zadani/email-expiration.jpg)
 
