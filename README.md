@@ -84,7 +84,7 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
       useEffect(() => {}, [])
       ```
 
-   1. V efektu poslouchej na změny v kolekci `seznam`.
+   1. V efektu zavolej `onSnapshot` metody, která se spustí při každé změně v kolekci `seznam`.
 
       ```js
       db.collection('seznam').onSnapshot((querySnapshot) => {})
@@ -107,33 +107,29 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
 1. Vytvoř formulář na přidávání položek.
 
    1. Přidej stav pro textové políčko `const [nazev, setNazev] = useState('')`.
-   1. Přidej formulář.
+   1. Přidej funkci, která se postará o uložení dat a resetování formuláře.
+   ```js
+   const addData = () => {
+      db.collection('seznam').add({ nazev })
+
+      setNazev('')
+   }
+
+   ```
+   1. Přidej textový vstup a tlačítko pro přidání.
 
       ```
-      <form>
-      	<label>
-      		Název:{' '}
-      		<input
-      			value={nazev}
-      			onChange={(event) => setNazev(event.target.value)}
-      		/>
-      	</label>
-      	<button>Přidat</button>
-      </form>
+      <label>
+      	Název:{' '}
+      	<input
+      		value={nazev}
+      		onChange={(event) => setNazev(event.target.value)}
+      	/>
+      </label>
+      <button onClick={addData}>Přidat</button>
       ```
 
    1. V události `onSubmit` zamez přenačtení stránky pomocí `event.preventDefault()` při uložení.
-   1. V události přidej nový dokument do kolekce.
-
-      ```jsx
-      db.collection('seznam').add({ nazev })
-      ```
-
-   1. Vymaž text v textovém políčku.
-
-      ```jsx
-      setNazev('')
-      ```
 
 1. Seřaď položky podle data přidání.
 
