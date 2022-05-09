@@ -129,8 +129,6 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
       <button onClick={addData}>Přidat</button>
       ```
 
-   1. V události `onSubmit` zamez přenačtení stránky pomocí `event.preventDefault()` při uložení.
-
 1. Seřaď položky podle data přidání.
 
    1. Při přidávání položky do seznamu ulož i aktuální datum.
@@ -202,7 +200,9 @@ Dokumentace Firestore: [https://firebase.google.com/docs/firestore](https://fire
       db.collection('seznam').doc(polozka.id).delete()
       ```
 
-## Bonus
+## Bonus 1
+
+## Bonus 2
 
 1. Zapoj do projektu [React Router](https://reactrouter.com/web/guides/quick-start).
 
